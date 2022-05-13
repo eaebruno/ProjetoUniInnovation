@@ -457,8 +457,8 @@ html{
 .sessao-contrate {
     /*propriedades da div Contrate-nos*/
     width: auto;
-    height: auto    ;
-    background: url(img/teste.jpeg);
+    height: auto;
+    background: url(img/CONTRATE.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
