@@ -379,15 +379,15 @@ html{
 }
 
 
-.empresacabecalho {
-    /*propridades do cabecalho empresa*/
+.qscabecalho {
+    /*propridades do cabecalho quem somos*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.empresacabecalho h1 {
-    /*propriedades do titulo empresa*/
+.qscabecalho h1 {
+    /*propriedades do titulo quem somos*/
     font-family: var(--font-primary);
     font-size: 3rem;
     color: #1b3bdf;
@@ -396,8 +396,32 @@ html{
     margin-bottom: 1.5rem;
 }
 
-.empresa-txt {
-    /*propriedades do texto em empresa*/
+.subtitulo1{
+    /*propriedades do titulo quem somos*/
+    font-family: var(--font-secundary);
+    font-size: 1.5rem;
+    color: #1b3bdf;
+    font-weight: bolder;
+    border-bottom: solid 3px #000;
+    margin-bottom: 1.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quemsomos-txt1{
+    /*propriedades do texto em quem somos*/
+    font-family: var(--font-secundary);
+    margin-top: 3rem;
+    text-align: center;
+    height: 100vh;
+    left: 2rem;
+    right: 2rem;
+    
+}
+
+.quemsomos-txt2 {
+    /*propriedades do texto empresa*/
     font-family: var(--font-secundary);
     margin-top: 3rem;
     text-align: center;
@@ -406,25 +430,41 @@ html{
     right: 2rem;
 }
 
-.empresaformato {
-    /*propriedades da posição do texto empresa*/
+.quemsomos-txt2 h2{
+    /*propriedades do texto empresa*/
+    border-bottom: solid 3px #000;
+    margin-bottom: 1rem; 
+}
+
+.quemsomos-txt3 {
+    /*propriedades do texto em nossos valores*/
+    font-family: var(--font-secundary);
+    margin-top: 3rem;
+    text-align: center;
+    height: 100vh;
+    left: 2rem;
+    right: 2rem;
+}
+
+.qsformato {
+    /*propriedades da posição do texto em quem somos*/
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(6, 8rem);
     row-gap: .5rem;
 }
 
-.sessao-contato {
-    /*propriedades da div contatos*/
-    width: 100%;
-    height: 100vh;
-    background: url(img/CONTATOBG.jpg);
+.sessao-contrate {
+    /*propriedades da div Contrate-nos*/
+    width: auto;
+    height: auto    ;
+    background: url(img/teste.jpeg);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contato-wrapper {
+.contrate-wrapper {
     /*propriedades da div onde ficara o form*/
     width: 60%;
     height: 30rem;
@@ -432,22 +472,20 @@ html{
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
 }
 
-.contato-left {
-    /*propriedades do quadrado esquerdo em contatos*/
-    width: 35%;
-    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
-        url(img/FUNDOCONTATO.jpg);
-    background-size: cover;
+.contrate-left {
+    /*propriedades do quadrado esquerdo em contrate*/
+    width: 65%;
+    background-color: #eee;
 }
 
-.contato-right {
+.contrate-right {
     /*propriedades do quadrado direito em contatos*/
-    width: 65%;
+    width: 45%;
     background-color: #eee;
     padding: 1rem 3rem 3rem 3rem;
 }
 
-.sessao-contato h1 {
+.sessao-contrate h1 {
     /*propriedades do titulo contatos*/
     width: 100%;
     text-align: center;
@@ -457,7 +495,7 @@ html{
     font-weight: bolder;
 }
 
-.sessao-contato form {
+.sessao-contrate form {
     /*propriedades do formulario*/
     width: 100%;
     display: flex;
@@ -468,6 +506,7 @@ html{
 .input-group {
     /*propriedades das caixas de entrada em contato*/
     position: relative;
+    display:grid;
 }
 
 .field {
@@ -549,8 +588,8 @@ html{
 .workleft {
     /*propriedades do quadrado esquerdo em trabalhe conosco*/
     width: 35%;
-    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.4)),
-        url(img/WORKBG1.jpg);
+    background: linear-gradient(rgba(15, 15, 15, 0.3), rgba(22, 22, 22, 0.1)),
+        url(img/trabalheconosco.jpg);
     background-size: cover;
     object-fit: cover;
 }
