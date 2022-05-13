@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@100&family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,300;0,400;1,200;1,300&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 
 * {
     /*formata todas as propriedades iniciais*/
@@ -12,13 +13,12 @@
 
 :root {
     /*cria variaveis no css*/
-    --font-primary: "Montserrat", serif;
-    --font-secundary: "Mulish", serif;
-    --font-action: "Mulish", serif;
-    --font-send: "Baloo Da 2", serif;
+    --font-primary: "Merriweather Sans", serif;
+    --font-secundary: "Josefin Sans", serif;
+    --font-action: "Baloo Da 2", serif;
 }
 
-html{
+html {
     /*scroll da página ao clicar em links*/
     scroll-behavior: smooth;
 }
@@ -69,7 +69,7 @@ html{
 }
 
 
-.menuhamburguer span { 
+.menuhamburguer span {
     /*propriedades do botão fechar no menu*/
     position: absolute;
     left: 3rem;
@@ -81,7 +81,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: var(--font-send);
+    font-family: var(--font-action);
     opacity: 0;
 }
 
@@ -280,9 +280,12 @@ html{
 
 .servicos {
     /*propriedades da div serviços*/
-    display: grid;  /*separa em colunas*/
-    grid-template-columns: repeat(16, 1fr); /*didiviu em 16 colunas*/
-    grid-template-rows: repeat(6, 8rem); /*por 8 linhas*/
+    display: grid;
+    /*separa em colunas*/
+    grid-template-columns: repeat(16, 1fr);
+    /*didiviu em 16 colunas*/
+    grid-template-rows: repeat(6, 8rem);
+    /*por 8 linhas*/
     row-gap: .5rem;
 }
 
@@ -379,15 +382,8 @@ html{
 }
 
 
-.empresacabecalho {
-    /*propridades do cabecalho empresa*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.empresacabecalho h1 {
-    /*propriedades do titulo empresa*/
+.qscabecalho h1 {
+    /*propriedades do h1 em serviços*/
     font-family: var(--font-primary);
     font-size: 3rem;
     color: #1b3bdf;
@@ -396,35 +392,98 @@ html{
     margin-bottom: 1.5rem;
 }
 
-.empresa-txt {
-    /*propriedades do texto em empresa*/
+.qscabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: #000;
+}
+
+
+.subtitulo {
+    display: flex;
+}
+
+.subtitulo h2 {
+    /*propriedades do h1 em serviços*/
     font-family: var(--font-secundary);
-    margin-top: 3rem;
-    text-align: center;
-    height: 100vh;
-    left: 2rem;
-    right: 2rem;
+    font-size: 2rem;
+    color: #1b3bdf;
+    font-weight: lighter;
+    border-bottom: solid 3px #000;
+    margin-bottom: 1.5rem;
+    margin-left: 2%;
 }
 
-.empresaformato {
-    /*propriedades da posição do texto empresa*/
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(6, 8rem);
-    row-gap: .5rem;
+.quem-somostxt1 {
+    font-family: var(--font-secundary);
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-.sessao-contato {
-    /*propriedades da div contatos*/
-    width: 100%;
-    height: 100vh;
-    background: url(img/CONTATOBG.jpg);
+.quem-somostxt2 {
+    font-family: var(--font-secundary);
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.quem-somostxt3 {
+    font-family: var(--font-secundary);
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sessao-contrate {
+    /*propriedades da div Contrate-nos*/
+    width: auto;
+    height: auto;
+    background: url(img/CONTRATE.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contato-wrapper {
+.contrate-wrapper {
     /*propriedades da div onde ficara o form*/
     width: 60%;
     height: 30rem;
@@ -432,22 +491,20 @@ html{
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
 }
 
-.contato-left {
-    /*propriedades do quadrado esquerdo em contatos*/
-    width: 35%;
-    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
-        url(img/FUNDOCONTATO.jpg);
-    background-size: cover;
+.contrate-left {
+    /*propriedades do quadrado esquerdo em contrate*/
+    width: 65%;
+    background-color: #eee;
 }
 
-.contato-right {
+.contrate-right {
     /*propriedades do quadrado direito em contatos*/
-    width: 65%;
+    width: 45%;
     background-color: #eee;
     padding: 1rem 3rem 3rem 3rem;
 }
 
-.sessao-contato h1 {
+.sessao-contrate h1 {
     /*propriedades do titulo contatos*/
     width: 100%;
     text-align: center;
@@ -457,7 +514,7 @@ html{
     font-weight: bolder;
 }
 
-.sessao-contato form {
+.sessao-contrate form {
     /*propriedades do formulario*/
     width: 100%;
     display: flex;
@@ -468,6 +525,7 @@ html{
 .input-group {
     /*propriedades das caixas de entrada em contato*/
     position: relative;
+    display: grid;
 }
 
 .field {
@@ -549,8 +607,8 @@ html{
 .workleft {
     /*propriedades do quadrado esquerdo em trabalhe conosco*/
     width: 35%;
-    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.4)),
-        url(img/WORKBG1.jpg);
+    background: linear-gradient(rgba(15, 15, 15, 0.3), rgba(22, 22, 22, 0.1)),
+        url(img/trabalheconosco.jpg);
     background-size: cover;
     object-fit: cover;
 }
@@ -656,14 +714,14 @@ footer {
     justify-content: space-between;
 }
 
-.conteudorodape p{
+.conteudorodape p {
     /*propriedades do conteudo no paragrafo do rodapé*/
     font-family: var(--font-secundary);
     color: #8395ec;
     font-size: 1.2rem;
 }
 
-.listaredes a{
+.listaredes a {
     /*propriedades dos links no rodapé*/
     margin: 0 2rem;
     color: #8395ec;
@@ -681,9 +739,12 @@ footer {
     bottom: 3rem;
     width: 3rem;
     height: 3rem;
-    background: #36D1DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #36D1DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     justify-content: center;
     align-items: center;
     display: flex;
@@ -692,19 +753,54 @@ footer {
     box-shadow: 0 0.1rem 0.6rem #0000;
 }
 
+.quem-somostxt2 {
+    /*propriedades da div serviços*/
+    display: grid;
+    /*separa em colunas*/
+    grid-template-columns: repeat(10, 0.7fr);
+    /*didiviu em 16 colunas*/
+    grid-template-rows: repeat(5, 2rem);
+    /*por 8 linhas*/
+    row-gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-primary);
+}
 
+.quemsomos:nth-child(1){
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
 
+.quemsomos:nth-child(2){
+    grid-column: 7 / 9;
+    grid-row: 4 / 4;
+}
 
-/*
+.quemsomos:nth-child(3){
+    grid-column: 5 / 5;
+    grid-row: 3 / 4;
+}
 
+.quemsomos:nth-child(4){
+    grid-column: 3 / 3;
+    grid-row: 4 / 4;
+}
 
+.quemsomos:nth-child(5){
+    grid-column: 8 / 9;
+    grid-row: 1 / 1;
+}
 
+.quem-somostxt2 i {
+    /*propriedades dos icones em serviços*/
+    font-size: 2rem;
+    color: #1b3bdf;
+}
 
-
-
-
-
-
-
-
-*/
+.quem-somos h3 {
+    /*propriedade do titulo h3 em serviços*/
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
