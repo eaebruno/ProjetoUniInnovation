@@ -399,6 +399,23 @@ html {
     margin-bottom: 1.5rem;
 }
 
+.qscabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: #000;
+}
+
+.qscabecalho h1 {
+    /*propriedades do h1 em serviços*/
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    color: #1b3bdf;
+    font-weight: bolder;
+    border-bottom: solid 3px #000;
+    margin-bottom: 1.5rem;
+}
+
 .qscabecalho {
     display: flex;
     justify-content: center;
@@ -411,32 +428,8 @@ html {
     display: flex;
 }
 
-.subtitulo1{
-    /*propriedades do titulo quem somos*/
-    font-family: var(--font-secundary);
-    font-size: 1.5rem;
-    color: #1b3bdf;
-    font-weight: bolder;
-    border-bottom: solid 3px #000;
-    margin-bottom: 1.5rem;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.quemsomos-txt1{
-    /*propriedades do texto em quem somos*/
-    font-family: var(--font-secundary);
-    margin-top: 3rem;
-    text-align: center;
-    height: 100vh;
-    left: 2rem;
-    right: 2rem;
-    
-}
-
-.quemsomos-txt2 {
-    /*propriedades do texto empresa*/
+.subtitulo h2 {
+    /*propriedades do h1 em serviços*/
     font-family: var(--font-secundary);
     font-size: 2rem;
     color: #1b3bdf;
@@ -472,51 +465,6 @@ html {
     align-items: center;
     display: flex;
     margin-bottom: 15%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.quemsomos-txt2 h2{
-    /*propriedades do texto empresa*/
-    border-bottom: solid 3px #000;
-    margin-bottom: 1rem; 
-}
-
-.quemsomos-txt3 {
-    /*propriedades do texto em nossos valores*/
-    font-family: var(--font-secundary);
-    margin-top: 3rem;
-    text-align: center;
-    height: 100vh;
-    left: 2rem;
-    right: 2rem;
 }
 
 .qsformato {
