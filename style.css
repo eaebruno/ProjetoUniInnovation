@@ -287,6 +287,7 @@ html {
     grid-template-rows: repeat(6, 8rem);
     /*por 8 linhas*/
     row-gap: .5rem;
+    background-color: #eee;
 }
 
 .servico:nth-child(1) {
@@ -324,6 +325,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #eee;
 }
 
 .sessao-cabecalho h1 {
@@ -430,12 +432,13 @@ html {
 .subtitulo h2 {
     /*propriedades do h1 em serviços*/
     font-family: var(--font-secundary);
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: #1b3bdf;
     font-weight: bolder;
     border-bottom: solid 3px #000;
     margin-bottom: 4rem;
     margin-left: 2%;
+    text-transform: uppercase;
 }
 
 .quem-somostxt1 {
@@ -446,6 +449,7 @@ html {
     margin-bottom: 30px;
     margin-left: 2%;
     margin-right: 2%;
+    text-align: center;
 }
 
 .quem-somostxt2 {
@@ -834,6 +838,14 @@ footer {
     border-radius: 25px;
     box-shadow: 0 0.1rem 0.6rem #0000;
 }
+
+.linktopo:hover{
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+}
+
+
 
 .quem-somostxt2 {
     /*propriedades da div serviços*/
