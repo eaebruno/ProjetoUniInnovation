@@ -586,11 +586,12 @@ html {
 
 .sessao-contrate1 {
     /*propriedades da div Contrate-nos*/
-    background: url(img/BGCONTRATE.jpg);
+    background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 7%;
 }
 
 .contrate-wrapper {
@@ -603,10 +604,21 @@ html {
 
 .contrate-left {
     /*propriedades do quadrado esquerdo em contrate*/
-    width: 40%;
+    width: 60%;
     height: 60%;
-    background-color: #eee;
+    background: url(img/BGCONTRATEleft.jpg);
     border-radius: 20px 0 0 20px;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.contrate-right {
+    /*propriedades do quadrado direito em contatos*/
+    width: 60%;
+    height: 60%;
+    background: url(img/BGCONTRATEright.jpg);
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+    
 }
 
 .sessao-contrate {
@@ -625,13 +637,6 @@ html {
     margin-bottom: 1.5rem;
 }
 
-.contrate-right {
-    /*propriedades do quadrado direito em contatos*/
-    width: 40%;
-    height: 60%;
-    background-color: #eee;
-    border-radius: 0 20px 20px 0;
-}
 
 .sessao-contrate1 form {
     /*propriedades do formulario*/
@@ -650,6 +655,7 @@ html {
     font-size: 0.6rem;
     float: right;
     margin-top: 3rem;
+    color: #ffff;
 }
 
 .field {
@@ -683,7 +689,7 @@ html {
     font-size: 0.9rem;
     font-family: var(--font-secundary);
     text-transform: uppercase;
-    transition: all 0.3s;
+    transition: all 0.2s;
     margin-left: 15px;
     justify-content: center;
     align-items: center;
